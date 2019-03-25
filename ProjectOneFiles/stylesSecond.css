@@ -1,0 +1,511 @@
+/* ----- throughout the document -----------*/ 
+
+* p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 150%;
+}
+.timesNewRomanFont {
+    font-family: "Times New Roman", Times, serif;
+}
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*------------nav bar--------------*/
+
+nav { 
+    width: 100%; 
+    background-color: black; 
+    margin-bottom: 50px; 
+    /*display: flex; 
+    flex-direction: column;*/ 
+    display: block; 
+    /*position: fixed;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+    z-index: 1;
+}
+#navDiv1 {
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    background-color: black; 
+    border-bottom: 5px;  
+    border-bottom: 1px rgb(192, 222, 224) solid;  
+    padding-left: 2.5%;  
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+@media only screen and (max-width: 700px) {
+    #navDiv1 {
+        display: block;  
+        padding-left: 0em;  
+    }
+    #logoWrapper {
+        padding-left: 2.5%; 
+    }
+  }
+#logo {
+    width: 60px; 
+    height: 60px; 
+}
+#logoDiv {
+    width: 60px; 
+}
+#logoWrapper { 
+    /* */ 
+}
+@media only screen and (max-width: 700px) {
+    #logoWrapper {
+        width: 100%;
+        clear: right;   
+        margin-bottom: 0; 
+    }
+  }
+#div1 {
+    margin-left: 15px; 
+    color: white; 
+    margin-top: 25px;   
+}
+#logoText {
+    font-size: 20px;
+}
+#pageSlogan {
+    font-size: 20px;
+    color: rgb(192, 222, 224); 
+    font-style: italic;
+}
+#div2 {  
+    color: white; 
+    text-align: right; 
+    margin-top: 25px; 
+    margin-right: 45px;    
+}
+@media only screen and (max-width: 700px) {
+    #div2 { 
+        margin-top: 0; 
+        text-align: center; 
+        padding-bottom: 1em; 
+    }
+}
+#navDiv2 {
+    height: 45px; 
+    padding-top: 0%; 
+    padding-left: 2.5%;  
+    padding-bottom: 0%; 
+    display: flex; 
+    flex-direction: row;  
+}
+.linkCol { 
+    padding-right: 0%;
+    margin: 0; 
+}
+.linkCol > a {
+    display: inline-block; 
+    position: relative; 
+    left: 0; 
+    top: 0;   
+    padding: 14px; 
+    padding-right:20px; 
+    padding-left:20px;   
+    color: white; 
+    text-decoration: none;
+    margin: 0
+}
+.linkCol > a:visited {
+    color: white; 
+    text-decoration: none; 
+}
+.linkCol > a:hover {
+    color: white; 
+    text-decoration: none; 
+    background-color: lightgrey; 
+}
+
+/*------------body-------------*/
+
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(192, 192, 192); 
+    /*background-color: rgb(168, 173, 173); */
+    /*background-image: url("bgImages/bg9.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    position: relative;*/
+}
+@media only screen and (max-width: 625px) {
+    body {
+      /* background-color:  rgb(192, 222, 224); */ 
+    }
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width:91.66%;}
+.col-12 {width: 100%;}
+
+#jakesName {
+    font-weight: bold;
+    text-decoration: none;
+    color: #070169
+} 
+#pageOneFirstHeader {
+    color: rgb(11, 73, 114); 
+}
+@media only screen and (max-width: 625px) {
+    #pageOneFirstHeader > br {
+        display: none; 
+    }
+}
+.headerBlue {
+    color:  rgb(11, 73, 114);
+}
+#nameSpan {
+    line-height: 150%; 
+}
+.row {
+    display: flex; 
+    flex-direction: row; 
+}
+.rowOuter {
+   
+    margin: auto; 
+    background-color: white; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rowInner {
+    padding-top: 1.5em; 
+    margin: auto; 
+}
+#topSpace {
+    height: 175px; 
+}
+#numTopSpace {
+    height: 125px; 
+}
+#bankTopSpace {
+    height: 125px; 
+}
+#row2Inner {
+    padding-top: 20px; 
+    padding-bottom: 15px; 
+}
+#row1 {
+    /*padding-top: 150px;*/
+}
+#row2, #row3 {
+    margin-top: 50px; 
+}
+#row1ParaLeft {
+    padding-right: 2%;   
+}
+#row2floater {
+    width: 250px; 
+    height: 250px;
+    background-color: white;  
+    float: right; 
+    background-color: #f0eff7; 
+    border-top: 5px solid rgb(180, 0, 0);
+    margin-left:2em; 
+    margin-bottom:2em; 
+    margin-top: 15px; 
+    word-wrap: break-word;
+    box-sizing: border-box; 
+    padding: 15px; 
+    align-content: center; 
+    justify-content: center; 
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 150%;
+}
+#row3floater {
+    width: 250px; 
+    height: 250px;
+    background-color: white;  
+    float: left;
+    background-color: #f0eff7; 
+    border-top: 5px solid rgb(180, 0, 0);
+    margin-right:2em; 
+    margin-bottom:2em; 
+    word-wrap: break-word;
+    box-sizing: border-box; 
+    padding: 15px; 
+    align-content: center; 
+    justify-content: center; 
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 150%;
+}
+h1 { 
+    font-weight: normal; 
+}
+#row1ParaWrapper {
+    display: flex; 
+    flex-direction: row; 
+}
+@media only screen and (max-width: 625px) {
+    #row1ParaWrapper {
+        display: block;  
+    }
+}
+
+/*------footer-----------*/
+
+footer {
+    margin-top: 60px; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgb(83, 83, 83); 
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+@media only screen and (max-width: 625px) {
+    footer {
+        display: flex; 
+        flex-direction: column; 
+        background-color: white; 
+    }
+}
+#footRow1 {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    height: 250px; 
+}
+@media only screen and (max-width: 625px) {
+    #footRow1 {
+        display: block;    
+    }
+}
+#footRow2:before {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 90%; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid white; /* This creates the border. Replace black with whatever color you want. */
+}
+@media only screen and (max-width: 625px) {
+    #footRow2:before {
+        content: normal; 
+    }
+}
+#footRow2 { 
+    height: 100px; 
+}
+@media only screen and (max-width: 625px) {
+    #footRow2 { 
+        position: relative; 
+        top: 325px; 
+        border-top: solid white 1px; 
+        background-color: rgb(83, 83, 83);
+    }
+}
+#footColLeft {
+    display: flex; 
+    flex-direction: row; 
+    padding-left: 5%; 
+}
+#footColLeft:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    height: 90%; /* Change this to whatever width you want. */
+    border-right: 1px solid white; /* This creates the border. Replace black with whatever color you want. */
+    margin: auto; 
+    margin-right: -10px;   
+}
+@media only screen and (max-width: 625px) {
+    #footColLeft {
+        border-bottom: solid white 1px;  
+        clear: right; 
+        width: 100%;   
+        padding-bottom: 1em; 
+        box-sizing: border-box; 
+        background-color: rgb(83, 83, 83);
+    }
+}
+#footColLeftWrapper {
+    padding-top: .25em;
+    padding-left: 1em;      
+}
+@media only screen and (max-width: 625px) {
+    #footColLeftWrapper {
+        width: 200px;    
+        margin: auto; 
+        position: relative; 
+        left: 2em; 
+        padding-bottom: 1em;   
+    }
+}
+#footColRight:before {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    margin: auto; /* This will center the border. */
+    height: 90%; /* Change this to whatever width you want. */
+    border-left: 1px solid white; /* This creates the border. Replace black with whatever color you want. */
+}
+#footColRight {
+    align-content: center; 
+    display: flex; 
+    padding-right: 5%; 
+}
+@media only screen and (max-width: 625px) {
+    #footColRight { 
+        display: block;   
+        padding-top: 15px; 
+        padding-bottom: 59px; 
+        width: 100%;  
+        box-sizing: border-box;  
+        background-color: rgb(83, 83, 83);   
+    }
+}
+#footColRightNav {
+    margin-right:70px;  
+    width: 180px; 
+    height: auto;   
+    margin: auto; 
+}
+@media only screen and (max-width: 625px) {
+    #footColRightNav { 
+        margin: auto;    
+    }
+}
+.topBorders {
+    border-top: solid black 1px; 
+}
+.topAndBottomBorders {
+    border-top: solid black 1px; 
+    border-bottom: solid black 1px; 
+}
+#cell1, #cell2, #cell3, #cell4 {
+    height: 25%
+}
+.topBorders, .align {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.topBorders > a, .align > a {
+    text-decoration: none; 
+    color: rgb(192, 222, 224); 
+    display: inline-block; 
+    position: relative; 
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    padding-right: none; 
+}
+#cell1 > a {
+    padding-right: 113px;
+}
+#cell2 > a {
+    padding-right: 95px;
+}
+#cell3 > a {
+    padding-right: 87.5px;
+}
+#cell4 > a {
+    padding-right: 100px;
+}
+.topBorders > a:hover, .align > a:hover {
+   background-color: lightslategray; 
+}
+
+.lightGreyColor {
+    color: rgb(224, 224, 224); 
+}
+.blueColor {
+    color: rgb(192, 222, 224)
+}
+
+/* ---------styles specific for the first API page ------------*/
+
+#row3 {
+   /* background-color: red; */
+   /* padding-bottom: 100px; */
+}
+
+#numberRowWrapperOne {
+    display: flex; 
+    flex-direction: row; 
+    
+    max-height: 300px; 
+}
+#numParOne {
+    height: auto; 
+    margin: auto; 
+    margin-left: 10px; 
+    margin-top: 140px; 
+}
+@media only screen and (max-width: 1005px) {
+    #numParOne { 
+        position: relative; 
+        top: -1.5em;  
+    }
+}
+@media only screen and (max-width: 800px) {
+    #numberRowWrapperOne {
+        display: block;
+      
+        margin: auto;  
+    }
+    #numParOne { 
+        position: relative; 
+        top: -9em; 
+    }
+}
+#numImage {
+   /* border: black solid 1px;*/ 
+   position: relative; 
+   left: -10px; 
+   z-index: 0;
+}
+#numRowHeader {
+    margin-bottom: 0; 
+}
+#worldBank {
+    width: 100px; 
+    height: 100px;   
+}
+#bankRowWrapperOne { 
+    display: flex; 
+    flex-direction: row; 
+}
+#bankParOne {
+    position: relative; 
+    top: 35px; 
+
+    margin-left: 15px; 
+}
+@media only screen and (max-width: 625px) {
+    #bankRowWrapperOne {
+        display: flex; 
+        flex-direction: column; 
+    }
+    #bankRowWrapperOne {
+        display: block;
+        margin: auto;  
+    }
+    #bankParOne { 
+        position: relative; 
+        top: -2px;
+        left: -12px;  
+    }
+}
+#bankRow {
+    /* border: black solid 1px; */ 
+}
+#bankInnerRow {
+   /* border: solid black 1px; */ 
+}
